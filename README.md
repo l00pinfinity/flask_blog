@@ -2,7 +2,7 @@
 
 Introduction to Developing Web Applications with Python-Flask Development from Scatch
 
-1. Introduction
+1.Introduction
 
 2.Completed image of the blog application
 
