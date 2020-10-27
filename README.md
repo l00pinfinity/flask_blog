@@ -1,6 +1,6 @@
-# flask_blog
+## flask_blog
 
-Introduction to Developing Web Applications with Python-Flask Development from Scatch
+Introduction to Developing Web Applications with Python-Flask Development from Scratch
 
 1.Introduction
 
@@ -36,4 +36,10 @@ Introduction to Developing Web Applications with Python-Flask Development from S
 
 17.url_for - Automatically Create Links
 
-18.
+18.Work with databases
+
+19.Model- Model in the MTV framework
+
+20. Create scripts - make certain actions common
+
+21. Learn about CRUD
