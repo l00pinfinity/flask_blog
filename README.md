@@ -40,6 +40,6 @@ Introduction to Developing Web Applications with Python-Flask Development from S
 
 19.Model- Model in the MTV framework
 
-20. Create scripts - make certain actions common
+20.Create scripts - make certain actions common
 
-21. Learn about CRUD
+21.Learn about CRUD
