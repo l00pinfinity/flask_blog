@@ -10,12 +10,6 @@ def show_entries():
         return redirect(url_for('login'))
     return render_template('entries/index.html')
 
-@app.route('/entries/new', methods=['GET'])
-def new_entry():
-    if not session.get('logged_in'):
-        return redirect(url_for('login'))
-    return render_template('entries/new.html')
-
 @app.route('/entries', methods=['POST'])
 def add_entry():
     if not session.get('logged_in'):
@@ -28,3 +22,16 @@ def add_entry():
     db.session.commit()
     flash('A new article has been created.')
     return redirect(url_for('show_entries'))
+
+@app.route('/entries/new', methods=['GET'])
+def new_entry():
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
+    return render_template('entries/new.html')
+
+@app.route('/entries/<int:id>', methods=['GET'])
+def show_entry(id):
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
+    entry = Enter.query.get(id)
+    return render_template('entries/show.html', entry=entry)
