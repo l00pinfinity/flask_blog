@@ -43,3 +43,11 @@ Introduction to Developing Web Applications with Python-Flask Development from S
 20.Create scripts - make certain actions common
 
 21.Learn about CRUD
+
+22.Create a blog posting function - Create in CRUD
+
+23.Create a blog list feature - Read in CRUD
+
+24.Create a blog detail feature - Read in CRUD
+
+25.Create a blog editing feature - Update in CRUD
