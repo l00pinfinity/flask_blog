@@ -1,4 +1,3 @@
-
 from flask import request, redirect, url_for, render_template, flash, session
 from flask_blog import app
 
@@ -16,7 +15,6 @@ def login():
             flash('Login successful')
             return redirect(url_for('show_entries'))
     return render_template('login.html')
-
 
 
 @app.route('/logout')

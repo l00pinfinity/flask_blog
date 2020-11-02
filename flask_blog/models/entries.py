@@ -1,5 +1,3 @@
-#flask_blog/models/entries.py
-
 from flask_blog import db
 from datetime import datetime
 
