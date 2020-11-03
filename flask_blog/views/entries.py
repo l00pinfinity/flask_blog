@@ -35,3 +35,10 @@ def show_entry(id):
         return redirect(url_for('login'))
     entry = Enter.query.get(id)
     return render_template('entries/show.html', entry=entry)
+
+@app.route('/entries/<int:id>/edit', methods=['GET'])
+def edit_entry(id):
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
+    entry = Entry.query.get(id)
+    return render_template('entries/edit.html', entry=entry)
